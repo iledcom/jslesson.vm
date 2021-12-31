@@ -29,6 +29,7 @@ const data = withHiddenProps({
 	_uid: '1231231'
 })
 
+
 // Optimization
 const userData = [
 {id: 1, name: 'Konstantyn', job: 'Fullstack', age: 40},
@@ -38,6 +39,7 @@ const userData = [
 ]
 
 const index = {}
+
 userData.forEach(i => (index[i.id] = i))
 
 console.log(index[3])  // получим {id: 3, name: 'Alena', job: 'Backend', age: 32}
